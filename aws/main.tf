@@ -24,7 +24,7 @@ resource "aws_instance" "chat_app" {
   key_name = var.keypair
 
   tags = {
-    Name = "chat-app"
+    Name = var.instance_name
   }
 
   user_data     = "${file("${path.module}/scripts/startup.sh")}"

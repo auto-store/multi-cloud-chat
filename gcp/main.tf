@@ -14,7 +14,7 @@ resource "google_compute_instance" "chat_app" {
   machine_type = var.machine_type
   zone         = var.zone
 
-  tags = ["chat-app", "http-server"]
+  tags = ["chat-app", "http-server", "tag"]
 
   boot_disk {
     initialize_params {

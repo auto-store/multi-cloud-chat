@@ -13,3 +13,9 @@ variable "keypair" {
     default = "tom-keypair"
 }
 
+variable "instance_name" {
+    type = string
+    default = "chat-app"
+}
+
+
